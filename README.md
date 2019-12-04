@@ -12,6 +12,9 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 3: Crossed Wires 
         * Part 1 - [Description](https://adventofcode.com/2019/day/3#part1) - [Solution](2019/3_crossed_wires_part_1.py)
         * Part 2 - [Description](https://adventofcode.com/2019/day/3#part2) - [Solution](2019/3_crossed_wires_part_2.py)
+    * Day 4: Secure Container 
+        * Part 1 - [Description](https://adventofcode.com/2019/day/4#part1) - [Solution](2019/4_secure_container_part_1.py)
+        * Part 2 - [Description](https://adventofcode.com/2019/day/4#part2) - [Solution](2019/4_secure_container_part_2.py)
 * [2018](https://adventofcode.com/2018)
     * Day 1: Chronal Calibration
         * Part 1 - [Description](https://adventofcode.com/2018/day/1#part1) - [Solution](2018/1_chronal_calibration_part_1.py)
