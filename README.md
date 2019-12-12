@@ -15,6 +15,9 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 10: Monitoring Station 
         * Part 1 - [Description](https://adventofcode.com/2019/day/10#part1) - [Solution](2019/10_monitoring_station_part_1.py)
         * Part 2 - [Description](https://adventofcode.com/2019/day/10#part2) - [Solution](2019/10_monitoring_station_part_2.py)
+    * Day 12: The N-Body Problem 
+        * Part 1 - [Description](https://adventofcode.com/2019/day/12#part1) - [Solution](2019/12_the_n_body_problem_part_1.py)
+        * Part 2 - [Description](https://adventofcode.com/2019/day/12#part2) - [Solution](2019/12_the_n_body_problem_part_2.py)
 * [2018](https://adventofcode.com/2018)
     * Day 1: Chronal Calibration
         * Part 1 - [Description](https://adventofcode.com/2018/day/1#part1) - [Solution](2018/1_chronal_calibration_part_1.py)
