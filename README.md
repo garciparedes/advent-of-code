@@ -15,6 +15,9 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 4: Secure Container 
         * Part 1 - [Description](https://adventofcode.com/2019/day/4#part1) - [Solution](2019/4_secure_container_part_1.py)
         * Part 2 - [Description](https://adventofcode.com/2019/day/4#part2) - [Solution](2019/4_secure_container_part_2.py)
+    * Day 5: Sunny with a Chance of Asteroids 
+        * Part 1 - [Description](https://adventofcode.com/2019/day/5#part1) - [Solution](2019/5_sunny_with_a_chance_of_asteroids_part_1.py)
+        * Part 2 - [Description](https://adventofcode.com/2019/day/5#part2) - [Solution](2019/5_sunny_with_a_chance_of_asteroids_part_2.py)
     * Day 6: Universal Orbit Map 
         * Part 1 - [Description](https://adventofcode.com/2019/day/6#part1) - [Solution](2019/6_universal_orbit_map_part_1.py)
         * Part 2 - [Description](https://adventofcode.com/2019/day/6#part2) - [Solution](2019/6_universal_orbit_map_part_2.py)
