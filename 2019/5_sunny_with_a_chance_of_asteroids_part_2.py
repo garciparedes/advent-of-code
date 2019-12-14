@@ -19,7 +19,7 @@ MODE = {
 }
 
 
-def execute_trinary_operation(program: List[int], idx: int, op: int, a_mode: int, b_mode: int,
+def execute_ternary_operation(program: List[int], idx: int, op: int, a_mode: int, b_mode: int,
                               dest_mode: int) -> Tuple[List[int], int]:
     a_idx = program[(idx := idx + 1)]
     if a_mode == MODE['POSITION']:
@@ -113,7 +113,7 @@ def execute_program(program: List[int]) -> List[int]:
         if op == 99:
             break
         if op in (OPS['SUM'], OPS['PRODUCT'], OPS['LESS_THAN'], OPS['EQUALS']):
-            program, idx = execute_trinary_operation(program, idx, op, a_mode, b_mode, dest_mode)
+            program, idx = execute_ternary_operation(program, idx, op, a_mode, b_mode, dest_mode)
         elif op in (OPS['JUMP_IF_TRUE'], OPS['JUMP_IF_FALSE']):
             program, idx = execute_binary_operation(program, idx, op, a_mode, b_mode)
         elif op in (OPS['INPUT'], OPS['OUTPUT']):
