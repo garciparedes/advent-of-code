@@ -37,13 +37,6 @@ class IntCode(object):
         'RELATIVE': 2,
     }
 
-    def append_input(self, value: int) -> None:
-        self.inputs.append(value)
-
-    @property
-    def last_output(self) -> int:
-        return self.outputs.pop()
-
     def __init__(self, program: List[int], inputs: List[int] = None):
         if inputs is None:
             inputs = list()
@@ -56,6 +49,21 @@ class IntCode(object):
 
         self.outputs = list()
         self.executed = False
+
+    def append_input(self, value: int) -> None:
+        self.inputs.append(value)
+
+    @property
+    def last_output(self) -> int:
+        return self.outputs[-1]
+
+    @property
+    def halted(self) -> bool:
+        return self.program[self.idx] == 99
+
+    @property
+    def executing(self):
+        return self.idx != 0 and not self.halted
 
     def _get_position(self):
         self.idx += 1
@@ -128,7 +136,7 @@ class IntCode(object):
         return op, a_mode, b_mode, dest_mode
 
     def execute(self, **kwargs) -> List[int]:
-        if self.executed:
+        if self.halted:
             return self.outputs
 
         old_outputs_len = len(self.outputs)

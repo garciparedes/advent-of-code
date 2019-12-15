@@ -18,7 +18,7 @@ def compute_signal(program, setting) -> int:
             machine.append_input(second)
             outputs = machine.execute(interactive=True)
             second = outputs[-1]
-            if machine.executed:
+            if machine.halted:
                 running = False
                 continue
     return machines[-1].last_output
@@ -38,11 +38,8 @@ def main():
         text = file.readline().strip()
     program = [int(number) for number in text.split(',')]
 
-    # result = optimize_signals(program, 0, 4, 5)
-
-    machine = IntCode(program, [1])
-    outputs = machine.execute()
-    print(outputs)
+    result = optimize_signals(program, 5, 9, 5)
+    print(result)
 
 
 if __name__ == '__main__':
