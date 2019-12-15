@@ -37,6 +37,13 @@ class IntCode(object):
         'RELATIVE': 2,
     }
 
+    def append_input(self, value: int) -> None:
+        self.inputs.append(value)
+
+    @property
+    def last_output(self) -> int:
+        return self.outputs.pop()
+
     def __init__(self, program: List[int], inputs: List[int] = None):
         if inputs is None:
             inputs = list()
@@ -145,9 +152,9 @@ class IntCode(object):
         return self.outputs
 
     def another_step(self, old_outputs_len: int, steps: int = None, max_steps: int = None,
-                     pause_with_output: bool = False, **kwargs) -> bool:
+                     interactive: bool = False, **kwargs) -> bool:
         return (
                 self.idx < len(self.program)
-                and (old_outputs_len == len(self.outputs) or not pause_with_output)
+                and (old_outputs_len == len(self.outputs) or not interactive)
                 and (max_steps is None or steps < max_steps)
         )

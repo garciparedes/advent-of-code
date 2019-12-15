@@ -9,19 +9,19 @@ from intcode import IntCode
 def compute_signal(program, setting) -> int:
     machines = [IntCode(program) for _ in range(len(setting))]
     for first, machine in zip(setting, machines):
-        machine.inputs.append(first)
+        machine.append_input(first)
 
     second = 0
     running = True
     while running:
         for machine in machines:
-            machine.inputs.append(second)
-            outputs = machine.execute(pause_with_output=True)
+            machine.append_input(second)
+            outputs = machine.execute(interactive=True)
             second = outputs[-1]
             if machine.executed:
                 running = False
                 continue
-    return machines[-1].outputs[-1]
+    return machines[-1].last_output
 
 
 def optimize_signals(program: List[int], minimum: int, maximum: int, count: int) -> int:
