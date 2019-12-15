@@ -2,28 +2,12 @@ from pathlib import Path
 from sys import argv
 from typing import List, Tuple
 
+from intcode import IntCode
+
 
 def restore_alarm(program: List[int], noun: int = 12, verb: int = 2) -> List[int]:
     program[1] = verb
     program[2] = noun
-    return program
-
-
-def execute_program(program: List[int]) -> List[int]:
-    idx = -1
-    while (idx := idx + 1) < len(program):
-        op = program[idx]
-        if op == 99:
-            break
-        a_idx = program[(idx := idx + 1)]
-        b_idx = program[(idx := idx + 1)]
-        dest_idx = program[(idx := idx + 1)]
-
-        if op == 1:
-            program[dest_idx] = program[a_idx] + program[b_idx]
-        elif op == 2:
-            program[dest_idx] = program[a_idx] * program[b_idx]
-
     return program
 
 
@@ -32,8 +16,11 @@ def find_parameters(program: List[int], value: int) -> Tuple[int, int]:
         for verb in range(99):
             working_program = list(program)
             restore_alarm(working_program, noun, verb)
-            execute_program(working_program)
-            if working_program[0] == value:
+
+            machine = IntCode(working_program)
+            machine.execute()
+
+            if machine.program[0] == value:
                 return verb, noun
     return -1, -1
 
