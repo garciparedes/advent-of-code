@@ -26,9 +26,7 @@ def main():
             update_plane(plane, **matched.groupdict())
 
     result = sum(sum(cell > 1 for cell in row) for row in plane)
-
-    with (file_path.parent / f'{file_path.stem}.output').open('w') as file:
-        file.write(f'{result}')
+    print(result)
 
 
 if __name__ == '__main__':

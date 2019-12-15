@@ -44,8 +44,7 @@ def main():
     result = min(abs(cross[0]) + abs(cross[1]) for cross in crosses)
 
     print(result)
-    with (file_path.parent / f'{file_path.stem}.output').open('w') as file:
-        file.write(f'{result}')
+
 
 
 if __name__ == '__main__':

@@ -30,8 +30,7 @@ def main():
             threes += three
         result = twos * threes
 
-    with (file_path.parent / f'{file_path.stem}.output').open('w') as file:
-        file.write(f'{result}')
+    print(result)
 
 
 if __name__ == '__main__':

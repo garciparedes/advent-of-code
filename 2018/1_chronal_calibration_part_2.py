@@ -20,8 +20,7 @@ def main():
         while (current := read_line_loop(file) + current) not in old_states:
             old_states.add(current)
 
-    with (file_path.parent / f'{file_path.stem}.output').open('w') as file:
-        file.write(f'{current}')
+    print(current)
 
 
 if __name__ == '__main__':

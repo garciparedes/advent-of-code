@@ -43,8 +43,6 @@ def main():
         result = row['box_id']
         break
     print(result)
-    with (file_path.parent / f'{file_path.stem}.output').open('w') as file:
-        file.write(f'{result}')
 
 
 if __name__ == '__main__':

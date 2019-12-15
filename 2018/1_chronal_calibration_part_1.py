@@ -10,8 +10,7 @@ def main():
         while text := file.readline().strip():
             result += int(text)
 
-    with (file_path.parent / f'{file_path.stem}.output').open('w') as file:
-        file.write(f'{result}')
+    print(result)
 
 
 if __name__ == '__main__':

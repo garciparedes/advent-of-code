@@ -63,8 +63,7 @@ def main():
     simulated_moons = simulate_steps(moons, 1000)
     result = sum(moon.energy for moon in simulated_moons)
     print(result)
-    with (file_path.parent / f'{file_path.stem}.output').open('w') as file:
-        file.write(f'{result}')
+
 
 
 if __name__ == '__main__':

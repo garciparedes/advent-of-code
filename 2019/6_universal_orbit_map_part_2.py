@@ -40,8 +40,7 @@ def main():
     result = len(you_orbits) + len(san_orbits)
 
     print(result)
-    with (file_path.parent / f'{file_path.stem}.output').open('w') as file:
-        file.write(f'{result}')
+
 
 
 if __name__ == '__main__':

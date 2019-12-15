@@ -30,8 +30,7 @@ def main():
         data = tuple(row.strip() for row in file.readlines())
         result = find_box(data)
 
-    with (file_path.parent / f'{file_path.stem}.output').open('w') as file:
-        file.write(f'{result}')
+    print(result)
 
 
 if __name__ == '__main__':
