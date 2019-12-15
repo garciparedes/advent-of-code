@@ -33,6 +33,9 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 10: Monitoring Station 
         * Part 1 - [Description](https://adventofcode.com/2019/day/10#part1) - [Solution](2019/10_monitoring_station_part_1.py)
         * Part 2 - [Description](https://adventofcode.com/2019/day/10#part2) - [Solution](2019/10_monitoring_station_part_2.py)
+    * Day 11: Space Police 
+        * Part 1 - [Description](https://adventofcode.com/2019/day/11#part1) - [Solution](2019/11_space_police_part_1.py)
+        * Part 2 - [Description](https://adventofcode.com/2019/day/11#part2) - [Solution](2019/11_space_police_part_2.py)
     * Day 12: The N-Body Problem 
         * Part 1 - [Description](https://adventofcode.com/2019/day/12#part1) - [Solution](2019/12_the_n_body_problem_part_1.py)
         * Part 2 - [Description](https://adventofcode.com/2019/day/12#part2) - [Solution](2019/12_the_n_body_problem_part_2.py)
