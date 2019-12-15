@@ -27,6 +27,9 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 8: Space Image Format 
         * Part 1 - [Description](https://adventofcode.com/2019/day/8#part1) - [Solution](2019/8_space_image_format_part_1.py)
         * Part 2 - [Description](https://adventofcode.com/2019/day/8#part2) - [Solution](2019/8_space_image_format_part_2.py)
+    * Day 9: Sensor Boost 
+        * Part 1 - [Description](https://adventofcode.com/2019/day/9#part1) - [Solution](2019/9_sensor_boost_part_1.py)
+        * Part 2 - [Description](https://adventofcode.com/2019/day/9#part2) - [Solution](2019/9_sensor_boost_part_2.py)
     * Day 10: Monitoring Station 
         * Part 1 - [Description](https://adventofcode.com/2019/day/10#part1) - [Solution](2019/10_monitoring_station_part_1.py)
         * Part 2 - [Description](https://adventofcode.com/2019/day/10#part2) - [Solution](2019/10_monitoring_station_part_2.py)
