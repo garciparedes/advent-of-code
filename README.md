@@ -24,6 +24,9 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 7: Amplification Circuit 
         * Part 1 - [Description](https://adventofcode.com/2019/day/7#part1) - [Solution](2019/7_amplification_circuit_part_1.py)
         * Part 2 - [Description](https://adventofcode.com/2019/day/7#part2) - [Solution](2019/7_amplification_circuit_part_2.py)
+    * Day 8: Space Image Format 
+        * Part 1 - [Description](https://adventofcode.com/2019/day/8#part1) - [Solution](2019/8_space_image_format_part_1.py)
+        * Part 2 - [Description](https://adventofcode.com/2019/day/8#part2) - [Solution](2019/8_space_image_format_part_2.py)
     * Day 10: Monitoring Station 
         * Part 1 - [Description](https://adventofcode.com/2019/day/10#part1) - [Solution](2019/10_monitoring_station_part_1.py)
         * Part 2 - [Description](https://adventofcode.com/2019/day/10#part2) - [Solution](2019/10_monitoring_station_part_2.py)
