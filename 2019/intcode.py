@@ -1,5 +1,13 @@
 from collections import defaultdict
-from typing import List, Tuple
+from typing import List, Tuple, Callable
+
+
+class IntCodeException(Exception):
+    pass
+
+
+class InputException(IntCodeException):
+    pass
 
 
 class IntCode(object):
@@ -37,21 +45,33 @@ class IntCode(object):
         'RELATIVE': 2,
     }
 
-    def __init__(self, program: List[int], inputs: List[int] = None):
+    def __init__(self, program: List[int], inputs: List[int] = None, input_fn: Callable[['IntCode'], int] = None):
         if inputs is None:
             inputs = list()
 
         self.program = defaultdict(lambda: 0, dict(enumerate(program)))
+
+        self.inputs_idx = 0
         self.inputs = list(inputs)
+        self.input_fn = input_fn
 
         self.idx = 0
         self.relative_base_idx = 0
 
         self.outputs = list()
-        self.executed = False
 
     def append_input(self, value: int) -> None:
         self.inputs.append(value)
+
+    def next_input(self) -> int:
+        if not self.inputs_idx < len(self.inputs):
+            if self.input_fn is None:
+                raise InputException()
+            else:
+                self.append_input(self.input_fn(self))
+        result = self.inputs[self.inputs_idx]
+        self.inputs_idx += 1
+        return result
 
     @property
     def last_output(self) -> int:
@@ -88,42 +108,54 @@ class IntCode(object):
         b_value = self._get_value(b_mode)
         dest_idx = self._get_value(dest_mode, True)
 
-        if op == self.OPS['SUM']:
-            self.program[dest_idx] = a_value + b_value
-        elif op == self.OPS['PRODUCT']:
-            self.program[dest_idx] = a_value * b_value
-        elif op == self.OPS['LESS_THAN']:
-            self.program[dest_idx] = int(a_value < b_value)
-        elif op == self.OPS['EQUALS']:
-            self.program[dest_idx] = int(a_value == b_value)
-        else:
-            raise ValueError(f'Unknown "{op}" operation.')
+        try:
+            if op == self.OPS['SUM']:
+                self.program[dest_idx] = a_value + b_value
+            elif op == self.OPS['PRODUCT']:
+                self.program[dest_idx] = a_value * b_value
+            elif op == self.OPS['LESS_THAN']:
+                self.program[dest_idx] = int(a_value < b_value)
+            elif op == self.OPS['EQUALS']:
+                self.program[dest_idx] = int(a_value == b_value)
+            else:
+                raise ValueError(f'Unknown "{op}" operation.')
+        except InputException as exc:
+            self.idx -= 3
+            raise exc
 
     def execute_binary_operation(self, op: int, input_mode, target_mode) -> None:
         input_value = self._get_value(input_mode)
         target_value = self._get_value(target_mode)
 
-        if op == self.OPS['JUMP_IF_TRUE']:
-            if input_value:
-                self.idx = target_value - 1
-        elif op == self.OPS['JUMP_IF_FALSE']:
-            if not input_value:
-                self.idx = target_value - 1
-        else:
-            raise ValueError(f'Unknown "{op}" operation.')
+        try:
+            if op == self.OPS['JUMP_IF_TRUE']:
+                if input_value:
+                    self.idx = target_value - 1
+            elif op == self.OPS['JUMP_IF_FALSE']:
+                if not input_value:
+                    self.idx = target_value - 1
+            else:
+                raise ValueError(f'Unknown "{op}" operation.')
+        except InputException as exc:
+            self.idx -= 2
+            raise exc
 
     def execute_unary_operation(self, op: int, target_mode) -> None:
-        if op == self.OPS['INPUT']:
-            target_idx = self._get_value(target_mode, True)
-            self.program[target_idx] = self.inputs.pop(0)
-        elif op == self.OPS['OUTPUT']:
-            target_value = self._get_value(target_mode)
-            self.outputs.append(target_value)
-        elif op == self.OPS['RELATIVE_BASE']:
-            target_value = self._get_value(target_mode)
-            self.relative_base_idx += target_value
-        else:
-            raise ValueError(f'Unknown "{op}" operation.')
+        try:
+            if op == self.OPS['INPUT']:
+                target_idx = self._get_value(target_mode, True)
+                self.program[target_idx] = self.next_input()
+            elif op == self.OPS['OUTPUT']:
+                target_value = self._get_value(target_mode)
+                self.outputs.append(target_value)
+            elif op == self.OPS['RELATIVE_BASE']:
+                target_value = self._get_value(target_mode)
+                self.relative_base_idx += target_value
+            else:
+                raise ValueError(f'Unknown "{op}" operation.')
+        except InputException as exc:
+            self.idx -= 1
+            raise exc
 
     def parse_op(self) -> Tuple[int, int, int, int]:
         raw_op = self.program[self.idx]
