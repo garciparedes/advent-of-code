@@ -2,6 +2,10 @@
 This is my set of awesome solutions for the Advent of Code puzzles
 
 ## Contents
+* [2020](https://adventofcode.com/2020)
+    * Day 1: Report Repair
+        * Part 1 - [Description](https://adventofcode.com/2020/day/1#part1) - [Solution](2020/01_report_repair_part_1.rs)
+        * Part 2 - [Description](https://adventofcode.com/2020/day/1#part2) - [Solution](2020/01_report_repair_part_2.rs)
 * [2019](https://adventofcode.com/2019)
     * Day 1: The Tyranny of the Rocket Equation 
         * Part 1 - [Description](https://adventofcode.com/2019/day/1#part1) - [Solution](2019/1_the_tyranny_of_the_rocket_equation_part_1.py)
@@ -55,4 +59,4 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 3: No Matter How You Slice It
         * Part 1 - [Description](https://adventofcode.com/2018/day/3#part1) - [Solution](2018/3_no_matter_how_you_slice_it_part_1.py)
         * Part 2 - [Description](https://adventofcode.com/2018/day/3#part2) - [Solution](2018/3_no_matter_how_you_slice_it_part_2.py)
-        
+
