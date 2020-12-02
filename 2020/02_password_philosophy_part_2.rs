@@ -31,7 +31,6 @@ impl Case {
         j += 1;
         let target = raw[j];
         
-
         j += 3;
         let text = raw[j..].iter().collect();
 
