@@ -9,6 +9,9 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 2: Password Philosophy
         * Part 1 - [Description](https://adventofcode.com/2020/day/2#part1) - [Solution](2020/02_password_philosophy_part_1.rs)
         * Part 2 - [Description](https://adventofcode.com/2020/day/2#part2) - [Solution](2020/02_password_philosophy_part_2.rs)
+    * Day 3: Toboggan Trajectory
+        * Part 1 - [Description](https://adventofcode.com/2020/day/3#part1) - [Solution](2020/03_toboggan_trajectory_part_1.rs)
+        * Part 2 - [Description](https://adventofcode.com/2020/day/3#part2) - [Solution](2020/03_toboggan_trajectory_part_2.rs)
 * [2019](https://adventofcode.com/2019)
     * Day 1: The Tyranny of the Rocket Equation 
         * Part 1 - [Description](https://adventofcode.com/2019/day/1#part1) - [Solution](2019/1_the_tyranny_of_the_rocket_equation_part_1.py)
