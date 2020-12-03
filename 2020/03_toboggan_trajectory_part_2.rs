@@ -6,7 +6,8 @@ fn main() -> io::Result<()> {
     io::stdin().read_to_string(&mut buffer)?;
 
     let board: Vec<_> = buffer
-        .trim().split("\n")
+        .trim()
+        .split("\n")
         .map(|row| row.trim().chars().map(|cell| cell == '.').collect::<Vec<_>>())
         .collect();
 
