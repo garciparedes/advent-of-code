@@ -21,6 +21,9 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 6: Custom Customs 
         * Part 1 - [Description](https://adventofcode.com/2020/day/6#part1) - [Solution](2020/06_custom_customs_part_1.rs)
         * Part 2 - [Description](https://adventofcode.com/2020/day/6#part2) - [Solution](2020/06_custom_customs_part_2.rs)
+    * Day 7: Handy Haversacks
+        * Part 1 - [Description](https://adventofcode.com/2020/day/7#part1) - [Solution](2020/07_handy_haversacks_part_1.rs)
+        * Part 2 - [Description](https://adventofcode.com/2020/day/7#part2) - [Solution](2020/07_handy_haversacks_part_2.rs)
 * [2019](https://adventofcode.com/2019)
     * Day 1: The Tyranny of the Rocket Equation 
         * Part 1 - [Description](https://adventofcode.com/2019/day/1#part1) - [Solution](2019/1_the_tyranny_of_the_rocket_equation_part_1.py)
