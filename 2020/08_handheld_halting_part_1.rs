@@ -6,14 +6,12 @@ fn main() -> io::Result<()> {
     let mut buffer = String::new();
     io::stdin().read_to_string(&mut buffer)?;
 
-
     let mut acc = 0;
     let mut visited = HashSet::new();
     let mut index = 0;
     visited.insert(index);
 
     let lines: Vec<_> = buffer.trim().split('\n').collect();
-
 
     loop {
         let mut parts = lines[index].trim().split_whitespace();
