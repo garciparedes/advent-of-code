@@ -30,6 +30,9 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 9: Encoding Error
         * Part 1 - [Description](https://adventofcode.com/2020/day/9#part1) - [Solution](2020/09_encoding_error_part_1.rs)
         * Part 2 - [Description](https://adventofcode.com/2020/day/9#part2) - [Solution](2020/09_encoding_error_part_2.rs)
+    * Day 10: Adapter Array
+        * Part 1 - [Description](https://adventofcode.com/2020/day/10#part1) - [Solution](2020/10_adapter_array_part_1.rs)
+        * Part 2 - [Description](https://adventofcode.com/2020/day/10#part2) - [Solution](2020/10_adapter_array_part_2.rs)
 * [2019](https://adventofcode.com/2019)
     * Day 1: The Tyranny of the Rocket Equation 
         * Part 1 - [Description](https://adventofcode.com/2019/day/1#part1) - [Solution](2019/1_the_tyranny_of_the_rocket_equation_part_1.py)
