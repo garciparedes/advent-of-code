@@ -40,7 +40,7 @@ This is my set of awesome solutions for the Advent of Code puzzles
         * Part 1 - [Description](https://adventofcode.com/2020/day/12#part1) - [Solution](2020/12_rain_risk_part_1.rs)
         * Part 2 - [Description](https://adventofcode.com/2020/day/12#part2) - [Solution](2020/12_rain_risk_part_2.rs)
     * Day 13: Shuttle Search
-        * Part 1 - [Description](https://adventofcode.com/2020/day/13#part1) - [Solution](2020/13_shittle_search_part_1.rs)
+        * Part 1 - [Description](https://adventofcode.com/2020/day/13#part1) - [Solution](2020/13_shuttle_search_part_1.rs)
         * Part 2 - [Description](https://adventofcode.com/2020/day/13#part2) - [Solution](2020/13_shuttle_search_part_2.rs)
 * [2019](https://adventofcode.com/2019)
     * Day 1: The Tyranny of the Rocket Equation 
