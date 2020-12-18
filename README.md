@@ -54,6 +54,9 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 17: Conway Cubes
         * Part 1 - [Description](https://adventofcode.com/2020/day/17#part1) - [Solution](2020/17_conway_cubes_part_1.rs)
         * Part 2 - [Description](https://adventofcode.com/2020/day/17#part2) - [Solution](2020/17_conway_cubes_part_2.rs)
+    * Day 18: Operation Order
+        * Part 1 - [Description](https://adventofcode.com/2020/day/18#part1) - [Solution](2020/18_operation_order_part_1.rs)
+        * Part 2 - [Description](https://adventofcode.com/2020/day/18#part2) - [Solution](2020/18_operation_order_part_2.rs)
 * [2019](https://adventofcode.com/2019)
     * Day 1: The Tyranny of the Rocket Equation 
         * Part 1 - [Description](https://adventofcode.com/2019/day/1#part1) - [Solution](2019/1_the_tyranny_of_the_rocket_equation_part_1.py)
