@@ -60,6 +60,9 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 19: Monster Messages
         * Part 1 - [Description](https://adventofcode.com/2020/day/19#part1) - [Solution](2020/19_monster_messages_part_1.rs)
         * Part 2 - [Description](https://adventofcode.com/2020/day/19#part2) - [Solution](2020/19_monster_messages_part_2.rs)
+    * Day 20: Jurassic Jigsaw
+        * Part 1 - [Description](https://adventofcode.com/2020/day/20#part1) - [Solution](2020/20_jurassic_jigsaw_part_1.rs)
+        * Part 2 - [Description](https://adventofcode.com/2020/day/20#part2) - [Solution](2020/20_jurassic_jigsaw_part_2.rs)
 * [2019](https://adventofcode.com/2019)
     * Day 1: The Tyranny of the Rocket Equation 
         * Part 1 - [Description](https://adventofcode.com/2019/day/1#part1) - [Solution](2019/1_the_tyranny_of_the_rocket_equation_part_1.py)

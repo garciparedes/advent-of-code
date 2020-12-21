@@ -18,7 +18,7 @@ fn main() -> io::Result<()> {
     let tiles: Vec<_> = buffer
         .trim()
         .split("\n\n")
-        .map(|raw| Tile::new(raw))
+        .map(|raw| Tile::from_raw(raw))
         .collect();
     
     let mut matches = HashMap::new(); 
@@ -63,7 +63,7 @@ struct Tile {
 }
 
 impl Tile {
-    fn new(raw: &str) -> Self {
+    fn from_raw(raw: &str) -> Self {
         let mut iterable = raw
             .trim()
             .split('\n');
@@ -83,7 +83,11 @@ impl Tile {
         let content: Vec<_> = iterable
             .map(|line| line.trim().chars().map(|c| c == '#').collect::<Vec<_>>())
             .collect();
-        
+
+        return Self::new(id, content);
+    }
+
+    fn new(id: usize, content: Vec<Vec<bool>>) -> Self {
         let top = content[0].clone();
         let right: Vec<_> = content.iter().map(|row| row[row.len() - 1]).collect();
         let bottom = content[content.len() - 1].clone();
@@ -112,25 +116,12 @@ impl Tile {
 
     fn rotate(&self) -> Self {
         let content = rotate_content(&self.content);
-
-        let mut borders = self.borders.clone();
-        let first = borders.remove(0);
-        borders.push(first);
-
-        return Tile { id: self.id, content: content, borders: borders };
+        return Self::new(self.id, content);
      }
 
     fn swap(&self) -> Self {
         let content = swap_content(&self.content);
-
-        let borders = vec![
-            self.borders[0].iter().cloned().rev().collect(),
-            self.borders[3].clone(),
-            self.borders[2].iter().cloned().rev().collect(),
-            self.borders[1].clone(),
-        ];
-
-        return Tile { id: self.id, content: content, borders: borders };
+        return Self::new(self.id, content);
     }
 
     fn content_without_border(&self) -> Vec<Vec<bool>> {
@@ -169,48 +160,8 @@ fn swap_content(content: &Vec<Vec<bool>>) -> Vec<Vec<bool>> {
 }
 
 fn compose_image(matches: &HashMap<&Tile, HashSet<&Tile>>) -> Vec<Vec<bool>> {
-    let mut structure = compose_board_structure(matches);
-
-    let mut board = Vec::new();
-    let mut matched = false;
-    for _ in 0..4 {
-        let mut first_tile = structure[0][0].clone();
-        if let Some(ans) = compose_board(&structure, &first_tile) {
-            println!("lalalalaa!");
-            board = ans;
-            break;
-        }
-        for _ in 0..2 {
-            first_tile = first_tile.swap();
-            for _ in 0..4 {
-                first_tile = first_tile.rotate();
-                if let Some(ans) = compose_board(&structure, &first_tile) {
-                    println!("tadaaaa!");
-                    board = ans;
-                    matched = true;
-                    break;
-                }
-            }
-            if matched {
-                break;
-            }
-        }
-        if matched {
-            break;
-        }
-        let mut new_structure = Vec::new();
-        for j in (0..structure[0].len()).rev() {
-            let mut row = Vec::new();
-            for i in 0..structure.len() {
-                row.push(structure[i][j]);
-            }
-            new_structure.push(row);
-        }
-        structure = new_structure;
-    }
-    if board.len() == 0 {
-        panic!();
-    }
+    let structure = compose_board_structure(matches);
+    let board = orient_tiles(&structure);
 
     let contents = board
         .into_iter()
@@ -238,6 +189,23 @@ fn compose_image(matches: &HashMap<&Tile, HashSet<&Tile>>) -> Vec<Vec<bool>> {
     return contents;
 }
 
+fn orient_tiles(structure: &Vec<Vec<&Tile>>) -> Vec<Vec<Tile>> {
+    let mut first_tile = structure[0][0].clone();
+    if let Some(ans) = compose_board(&structure, &first_tile) {
+        return ans;
+    }
+    for _ in 0..2 {
+        first_tile = first_tile.swap();
+        for _ in 0..4 {
+            first_tile = first_tile.rotate();
+            if let Some(ans) = compose_board(&structure, &first_tile) {
+                return ans;
+            }
+        }
+    }
+    panic!();
+}
+
 fn compose_board<'a>(structure: &Vec<Vec<&Tile>>, first_tile: &Tile) -> Option<Vec<Vec<Tile>>> {
     let mut board: Vec<Vec<Tile>> = Vec::new();
     for i in 0..structure.len() {
@@ -249,33 +217,43 @@ fn compose_board<'a>(structure: &Vec<Vec<&Tile>>, first_tile: &Tile) -> Option<V
             }
             let mut tile = structure[i][j].clone();
             if i > 0 {
-                loop {
-                    let (first_rot, second_rot, swap) = board[i - 1][j].matched_borders(&tile).unwrap();
-                    if first_rot != 2 {
-                        return None;
+                let mut matched = false;
+                for _ in 0..2 {
+                    tile = tile.swap();
+                    for _ in 0..4 {
+                        tile = tile.rotate();
+                        let (first_rot, second_rot, swap) = board[i - 1][j].matched_borders(&tile).unwrap();
+                        if first_rot == 2 && second_rot == 0 && !swap {
+                            matched = true;
+                            break;
+                        }
                     }
-                    if second_rot == 0 && !swap {
+                    if matched {
                         break;
                     }
-                    if swap {
-                        tile = tile.swap();
-                    }
-                    tile = tile.rotate();
+                }
+                if !matched {
+                    return None;
                 }
             }
             if j > 0 {
-                loop {
-                    let (first_rot, second_rot, swap) = row[j - 1].matched_borders(&tile).unwrap();
-                    if first_rot != 1 {
-                        return None;
+                let mut matched = false;
+                for _ in 0..2 {
+                    tile = tile.swap();
+                    for _ in 0..4 {
+                        tile = tile.rotate();
+                        let (first_rot, second_rot, swap) = row[j - 1].matched_borders(&tile).unwrap();
+                        if first_rot == 1 && second_rot == 3 && !swap {
+                            matched = true;
+                            break;
+                        }
                     }
-                    if second_rot == 3 && !swap {
+                    if matched {
                         break;
                     }
-                    if swap {
-                        tile = tile.swap();
-                    }
-                    tile = tile.rotate();
+                }
+                if !matched {
+                    return None;
                 }
             }
             row.push(tile);
