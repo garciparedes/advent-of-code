@@ -11,6 +11,49 @@ const PATTERN: &'static str =
 #    ##    ##    ###
  #  #  #  #  #  #   ";
 
+fn main() -> io::Result<()> {
+    let mut buffer = String::new();
+    io::stdin().read_to_string(&mut buffer)?;
+
+    let tiles: Vec<_> = buffer
+        .trim()
+        .split("\n\n")
+        .map(|raw| Tile::new(raw))
+        .collect();
+    
+    let mut matches = HashMap::new(); 
+    for i in 0..tiles.len() {
+        let tile_i = &tiles[i];
+        for j in (i + 1)..tiles.len() {
+            let tile_j = &tiles[j];
+            if tile_i.matches_with(tile_j) {
+                matches.entry(tile_i).or_insert_with(HashSet::new).insert(tile_j);
+                matches.entry(tile_j).or_insert_with(HashSet::new).insert(tile_i);
+            }
+        }
+    }
+    
+    let image = compose_image(&matches);
+    
+    let mut pattern: Vec<_> = PATTERN
+        .split('\n')
+        .map(|row| row.chars().map(|c| c == '#').collect::<Vec<_>>())
+        .collect();
+
+    let mut ans = 0;
+    for _ in 0..2 {
+        pattern = swap_content(&pattern);
+        for _ in 0..4 {
+            pattern = rotate_content(&pattern);
+            
+            let tmp = find_pattern(&image, &pattern);
+            ans = cmp::max(ans, tmp);
+        }
+    }
+
+    println!("{:?}", ans);
+    return Ok(());
+}
 
 #[derive(Debug, PartialEq, Eq, Hash, Clone)]
 struct Tile {
@@ -24,7 +67,6 @@ impl Tile {
         let mut iterable = raw
             .trim()
             .split('\n');
-
 
         let id = if let Some(line) = iterable.next() {
             let mut parts = line.trim().split_whitespace();
@@ -68,17 +110,8 @@ impl Tile {
         self.matched_borders(another).is_some()
     }
 
-
     fn rotate(&self) -> Self {
-    
-        let mut content = Vec::new();
-        for j in (0..self.content[0].len()).rev() {
-            let mut row = Vec::new();
-            for i in 0..self.content.len() {
-                row.push(self.content[i][j].clone());
-            }
-            content.push(row);
-        }
+        let content = rotate_content(&self.content);
 
         let mut borders = self.borders.clone();
         let first = borders.remove(0);
@@ -88,11 +121,7 @@ impl Tile {
      }
 
     fn swap(&self) -> Self {
-        let mut content = Vec::new();
-        for row in self.content.iter() {
-            let tmp: Vec<_> = row.iter().cloned().rev().collect();
-            content.push(tmp);
-        }
+        let content = swap_content(&self.content);
 
         let borders = vec![
             self.borders[0].iter().cloned().rev().collect(),
@@ -100,7 +129,6 @@ impl Tile {
             self.borders[2].iter().cloned().rev().collect(),
             self.borders[1].clone(),
         ];
-
 
         return Tile { id: self.id, content: content, borders: borders };
     }
@@ -117,7 +145,6 @@ impl Tile {
         return ans;
     }
 }
-
 
 fn rotate_content(content: &Vec<Vec<bool>>) -> Vec<Vec<bool>> {
     let mut rotated_content = Vec::new();
@@ -140,8 +167,6 @@ fn swap_content(content: &Vec<Vec<bool>>) -> Vec<Vec<bool>> {
     }
     return swapped_content;
 }
-
-
 
 fn compose_image(matches: &HashMap<&Tile, HashSet<&Tile>>) -> Vec<Vec<bool>> {
     let mut structure = compose_board_structure(matches);
@@ -187,7 +212,6 @@ fn compose_image(matches: &HashMap<&Tile, HashSet<&Tile>>) -> Vec<Vec<bool>> {
         panic!();
     }
 
-
     let contents = board
         .into_iter()
         .fold(Vec::new(), |mut full, row| {
@@ -214,7 +238,6 @@ fn compose_image(matches: &HashMap<&Tile, HashSet<&Tile>>) -> Vec<Vec<bool>> {
     return contents;
 }
 
-
 fn compose_board<'a>(structure: &Vec<Vec<&Tile>>, first_tile: &Tile) -> Option<Vec<Vec<Tile>>> {
     let mut board: Vec<Vec<Tile>> = Vec::new();
     for i in 0..structure.len() {
@@ -225,14 +248,13 @@ fn compose_board<'a>(structure: &Vec<Vec<&Tile>>, first_tile: &Tile) -> Option<V
                 continue;
             }
             let mut tile = structure[i][j].clone();
-
             if i > 0 {
                 loop {
                     let (first_rot, second_rot, swap) = board[i - 1][j].matched_borders(&tile).unwrap();
                     if first_rot != 2 {
                         return None;
                     }
-                    if first_rot == 2 && second_rot == 0 && !swap {
+                    if second_rot == 0 && !swap {
                         break;
                     }
                     if swap {
@@ -247,22 +269,19 @@ fn compose_board<'a>(structure: &Vec<Vec<&Tile>>, first_tile: &Tile) -> Option<V
                     if first_rot != 1 {
                         return None;
                     }
-                    if first_rot == 1 && second_rot == 3 && !swap {
+                    if second_rot == 3 && !swap {
                         break;
                     }
                     if swap {
                         tile = tile.swap();
                     }
-                   tile = tile.rotate();
-                        
+                    tile = tile.rotate();
                 }
             }
-
             row.push(tile);
         }
         board.push(row);
     }
-
     return Some(board);
 }
 
@@ -325,52 +344,6 @@ fn compose_board_structure<'a>(matches: &HashMap<&'a Tile, HashSet<&'a Tile>>) -
    
     return board;
 }
- 
-fn main() -> io::Result<()> {
-    let mut buffer = String::new();
-    io::stdin().read_to_string(&mut buffer)?;
-
-    let tiles: Vec<_> = buffer
-        .trim()
-        .split("\n\n")
-        .map(|raw| Tile::new(raw))
-        .collect();
-    
-    
-    let mut matches = HashMap::new(); 
-    for i in 0..tiles.len() {
-        let tile_i = &tiles[i];
-        for j in (i + 1)..tiles.len() {
-            let tile_j = &tiles[j];
-            if tile_i.matches_with(tile_j) {
-                matches.entry(tile_i).or_insert_with(HashSet::new).insert(tile_j);
-                matches.entry(tile_j).or_insert_with(HashSet::new).insert(tile_i);
-            }
-        }
-    }
-    
-    let image = compose_image(&matches);
-    
-    let mut pattern: Vec<_> = PATTERN
-        .split('\n')
-        .map(|row| row.chars().map(|c| c == '#').collect::<Vec<_>>())
-        .collect();
-
-    let mut ans = 0;
-    for _ in 0..2 {
-        pattern = swap_content(&pattern);
-        for _ in 0..4 {
-            pattern = rotate_content(&pattern);
-            
-            let tmp = find_pattern(&image, &pattern);
-            ans = cmp::max(ans, tmp);
-        }
-    }
-
-    println!("{:?}", ans);
-    return Ok(());
-}
-
 
 fn find_pattern(image: &Vec<Vec<bool>>, pattern: &Vec<Vec<bool>>) -> usize {
     let mut image = image.clone();
