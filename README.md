@@ -66,6 +66,9 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 21: Allergen Assessment
         * Part 1 - [Description](https://adventofcode.com/2020/day/21#part1) - [Solution](2020/21_allergen_assessment_part_1.rs)
         * Part 2 - [Description](https://adventofcode.com/2020/day/21#part2) - [Solution](2020/21_allergen_assessment_part_2.rs)
+    * Day 22: Crab Combat
+        * Part 1 - [Description](https://adventofcode.com/2020/day/22#part1) - [Solution](2020/22_crab_combat_part_1.rs)
+        * Part 2 - [Description](https://adventofcode.com/2020/day/22#part2) - [Solution](2020/22_crab_combat_part_2.rs)
 * [2019](https://adventofcode.com/2019)
     * Day 1: The Tyranny of the Rocket Equation 
         * Part 1 - [Description](https://adventofcode.com/2019/day/1#part1) - [Solution](2019/1_the_tyranny_of_the_rocket_equation_part_1.py)
