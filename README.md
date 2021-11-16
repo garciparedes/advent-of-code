@@ -131,4 +131,7 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 3: No Matter How You Slice It
         * Part 1 - [Description](https://adventofcode.com/2018/day/3#part1) - [Solution](2018/3_no_matter_how_you_slice_it_part_1.py)
         * Part 2 - [Description](https://adventofcode.com/2018/day/3#part2) - [Solution](2018/3_no_matter_how_you_slice_it_part_2.py)
-
+* [2015](https://adventofcode.com/2015)
+    * Day 1: Not Quite Lisp 
+        * Part 1 - [Description](https://adventofcode.com/2015/day/1#part1) - [Solution](2015/01_not_quite_lisp_part_1.rs)
+        * Part 2 - [Description](https://adventofcode.com/2015/day/1#part2) - [Solution](2015/01_not_quite_list_part_2.rs)
