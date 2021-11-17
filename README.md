@@ -135,3 +135,6 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 1: Not Quite Lisp 
         * Part 1 - [Description](https://adventofcode.com/2015/day/1#part1) - [Solution](2015/01_not_quite_lisp_part_1.rs)
         * Part 2 - [Description](https://adventofcode.com/2015/day/1#part2) - [Solution](2015/01_not_quite_lisp_part_2.rs)
+    * Day 2: I Was Told There Would Be No Math 
+        * Part 1 - [Description](https://adventofcode.com/2015/day/2#part1) - [Solution](2015/02_i_was_told_there_would_be_no_math_part_1.rs)
+        * Part 2 - [Description](https://adventofcode.com/2015/day/2#part2) - [Solution](2015/02_i_was_told_there_would_be_no_math_part_2.rs)
