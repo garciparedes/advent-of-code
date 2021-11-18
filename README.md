@@ -138,3 +138,6 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 2: I Was Told There Would Be No Math 
         * Part 1 - [Description](https://adventofcode.com/2015/day/2#part1) - [Solution](2015/02_i_was_told_there_would_be_no_math_part_1.rs)
         * Part 2 - [Description](https://adventofcode.com/2015/day/2#part2) - [Solution](2015/02_i_was_told_there_would_be_no_math_part_2.rs)
+    * Day 3: Perfectly Spherical Houses in a Vacuum
+        * Part 1 - [Description](https://adventofcode.com/2015/day/3#part1) - [Solution](2015/03_perfectly_spherical_houses_in_a_vacuum_part_1.rs)
+        * Part 2 - [Description](https://adventofcode.com/2015/day/2#part2) - [Solution](2015/03_perfectly_spherical_houses_in_a_vacuum_part_2.rs)
