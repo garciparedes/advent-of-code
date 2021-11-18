@@ -1,11 +1,11 @@
-
-*.input
-*.output
-
 # Ignore files without extension (binary files)
 *
 !/**/
 !*.*
+
+# Input and Output files
+*.input
+*.output
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
