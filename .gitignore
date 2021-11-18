@@ -2,6 +2,11 @@
 *.input
 *.output
 
+# Ignore files without extension (binary files)
+*
+!/**/
+!*.*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
