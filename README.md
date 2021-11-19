@@ -140,4 +140,7 @@ This is my set of awesome solutions for the Advent of Code puzzles
         * Part 2 - [Description](https://adventofcode.com/2015/day/2#part2) - [Solution](2015/02_i_was_told_there_would_be_no_math_part_2.rs)
     * Day 3: Perfectly Spherical Houses in a Vacuum
         * Part 1 - [Description](https://adventofcode.com/2015/day/3#part1) - [Solution](2015/03_perfectly_spherical_houses_in_a_vacuum_part_1.rs)
-        * Part 2 - [Description](https://adventofcode.com/2015/day/2#part2) - [Solution](2015/03_perfectly_spherical_houses_in_a_vacuum_part_2.rs)
+        * Part 2 - [Description](https://adventofcode.com/2015/day/3#part2) - [Solution](2015/03_perfectly_spherical_houses_in_a_vacuum_part_2.rs)
+    * Day 4: The Ideal Stocking Stuffer 
+        * Part 1 - [Description](https://adventofcode.com/2015/day/4#part1) - [Solution](2015/04_the_ideal_stocking_stuffer_part_1/src/main.rs)
+        * Part 2 - [Description](https://adventofcode.com/2015/day/4#part2) - [Solution](2015/04_the_ideal_stocking_stuffer_part_2/src/main.rs)
