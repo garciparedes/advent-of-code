@@ -144,3 +144,6 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 4: The Ideal Stocking Stuffer 
         * Part 1 - [Description](https://adventofcode.com/2015/day/4#part1) - [Solution](2015/04_the_ideal_stocking_stuffer_part_1/src/main.rs)
         * Part 2 - [Description](https://adventofcode.com/2015/day/4#part2) - [Solution](2015/04_the_ideal_stocking_stuffer_part_2/src/main.rs)
+    * Day 5: Doesn't He Have Intern-Elves For This?
+        * Part 1 - [Description](https://adventofcode.com/2015/day/5#part1) - [Solution](2015/05_doesnt_he_have_intern_elves_for_this_part_1.rs)
+        * Part 2 - [Description](https://adventofcode.com/2015/day/5#part2) - [Solution](2015/05_doesnt_he_have_intern_elves_for_this_part_2.rs)
