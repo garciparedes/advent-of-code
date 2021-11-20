@@ -147,3 +147,6 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 5: Doesn't He Have Intern-Elves For This?
         * Part 1 - [Description](https://adventofcode.com/2015/day/5#part1) - [Solution](2015/05_doesnt_he_have_intern_elves_for_this_part_1.rs)
         * Part 2 - [Description](https://adventofcode.com/2015/day/5#part2) - [Solution](2015/05_doesnt_he_have_intern_elves_for_this_part_2.rs)
+    * Day 6: Probably a Fire Hazard 
+        * Part 1 - [Description](https://adventofcode.com/2015/day/6#part1) - [Solution](2015/06_probably_a_fire_hazard_part_1.rs)
+        * Part 2 - [Description](https://adventofcode.com/2015/day/6#part2) - [Solution](2015/06_probably_a_fire_hazard_part_2.rs)
