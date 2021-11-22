@@ -153,3 +153,6 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 7: Some Assembly Required
         * Part 1 - [Description](https://adventofcode.com/2015/day/7#part1) - [Solution](2015/07_some_assembly_required_part_1.rs)
         * Part 2 - [Description](https://adventofcode.com/2015/day/7#part2) - [Solution](2015/07_some_assembly_required_part_2.rs)
+    * Day 8: Matchsticks 
+        * Part 1 - [Description](https://adventofcode.com/2015/day/8#part1) - [Solution](2015/08_matchsticks_part_1.rs)
+        * Part 2 - [Description](https://adventofcode.com/2015/day/8#part2) - [Solution](2015/08_matchsticks_part_2.rs)
