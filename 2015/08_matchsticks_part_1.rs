@@ -20,8 +20,8 @@ fn main() -> io::Result<()> {
                         match c2 {
                             '\\' | '\"' => computed_len += 1,
                             _ => {
-                                chars.next().unwrap();
-                                chars.next().unwrap();
+                                chars.next();
+                                chars.next();
                                 computed_len += 1;
                             }
                         };
