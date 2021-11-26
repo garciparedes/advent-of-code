@@ -162,3 +162,6 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 10: Elves Look, Elves Say
         * Part 1 - [Description](https://adventofcode.com/2015/day/10#part1) - [Solution](2015/10_elves_look_elves_say_part_1.rs)
         * Part 2 - [Description](https://adventofcode.com/2015/day/10#part2) - [Solution](2015/10_elves_look_elves_say_part_2.rs)
+    * Day 11: Corporate Policy
+        * Part 1 - [Description](https://adventofcode.com/2015/day/11#part1) - [Solution](2015/11_corporate_policy_part_1.rs)
+        * Part 2 - [Description](https://adventofcode.com/2015/day/11#part2) - [Solution](2015/11_corporate_policy_part_2.rs)
