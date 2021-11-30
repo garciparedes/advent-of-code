@@ -165,3 +165,6 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 11: Corporate Policy
         * Part 1 - [Description](https://adventofcode.com/2015/day/11#part1) - [Solution](2015/11_corporate_policy_part_1.rs)
         * Part 2 - [Description](https://adventofcode.com/2015/day/11#part2) - [Solution](2015/11_corporate_policy_part_2.rs)
+    * Day 12: JSAbacusFramework.io
+        * Part 1 - [Description](https://adventofcode.com/2015/day/12#part1) - [Solution](2015/12_jsabacus_framework_io_part_1/src/main.rs)
+        * Part 2 - [Description](https://adventofcode.com/2015/day/12#part2) - [Solution](2015/12_jsabacus_framework_io_part_2/src/main.rs)
