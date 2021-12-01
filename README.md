@@ -172,3 +172,6 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 12: JSAbacusFramework.io
         * Part 1 - [Description](https://adventofcode.com/2015/day/12#part1) - [Solution](2015/12_jsabacus_framework_io_part_1/src/main.rs)
         * Part 2 - [Description](https://adventofcode.com/2015/day/12#part2) - [Solution](2015/12_jsabacus_framework_io_part_2/src/main.rs)
+    * Day 13: Knights of the Dinner Table
+        * Part 1 - [Description](https://adventofcode.com/2015/day/13#part1) - [Solution](2015/13_knights_of_the_dinner_table_part_1.rs)
+        * Part 2 - [Description](https://adventofcode.com/2015/day/13#part2) - [Solution](2015/13_knights_of_the_dinner_table_part_2.rs)
