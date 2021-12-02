@@ -6,6 +6,9 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 1: Sonar Sweep
         * Part 1 - [Description](https://adventofcode.com/2021/day/1#part1) - [Solution](2021/01_sonar_sweep_part_1.rs)
         * Part 2 - [Description](https://adventofcode.com/2021/day/1#part2) - [Solution](2021/01_sonar_sweep_part_2.rs)
+    * Day 2: Dive!
+        * Part 1 - [Description](https://adventofcode.com/2021/day/2#part1) - [Solution](2021/02_dive_part_1.rs)
+        * Part 2 - [Description](https://adventofcode.com/2021/day/2#part2) - [Solution](2021/02_dive_part_2.rs)
 * [2020](https://adventofcode.com/2020)
     * Day 1: Report Repair
         * Part 1 - [Description](https://adventofcode.com/2020/day/1#part1) - [Solution](2020/01_report_repair_part_1.rs)
