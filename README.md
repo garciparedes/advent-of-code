@@ -178,3 +178,6 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 13: Knights of the Dinner Table
         * Part 1 - [Description](https://adventofcode.com/2015/day/13#part1) - [Solution](2015/13_knights_of_the_dinner_table_part_1.rs)
         * Part 2 - [Description](https://adventofcode.com/2015/day/13#part2) - [Solution](2015/13_knights_of_the_dinner_table_part_2.rs)
+    * Day 14: Reindeer Olympics
+        * Part 1 - [Description](https://adventofcode.com/2015/day/14#part1) - [Solution](2015/14_reindeer_olympics_part_1.rs)
+        * Part 2 - [Description](https://adventofcode.com/2015/day/14#part2) - [Solution](2015/14_reindeer_olympics_part_2.rs)
