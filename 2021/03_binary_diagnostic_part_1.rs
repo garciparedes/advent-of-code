@@ -1,23 +1,28 @@
 use std::io;
 use std::io::prelude::*;
+use std::collections::HashSet;
 
 fn main() -> io::Result<()> {
     let mut buffer = String::new();
     io::stdin().read_to_string(&mut buffer)?;
 
-    let diagnostic: Vec<_> = buffer
+    let diagnostic: HashSet<_> = buffer
         .trim()
         .split('\n')
         .map(|line| line.trim().chars().collect::<Vec<_>>())
         .collect();
 
-    let bit_len = diagnostic[0].len();
+    let bit_len = diagnostic
+        .iter()
+        .next()
+        .unwrap()
+        .len();
 
     let mut counts = vec![0; bit_len];
     for i in 0..bit_len {
         let mut count = 0;
-        for j in 0..diagnostic.len() {
-            if diagnostic[j][i] == '1' {
+        for bits in diagnostic.iter() {
+            if bits[i] == '1' {
                 count += 1;
             }
         }
