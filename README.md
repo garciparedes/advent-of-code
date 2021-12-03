@@ -184,3 +184,6 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 14: Reindeer Olympics
         * Part 1 - [Description](https://adventofcode.com/2015/day/14#part1) - [Solution](2015/14_reindeer_olympics_part_1.rs)
         * Part 2 - [Description](https://adventofcode.com/2015/day/14#part2) - [Solution](2015/14_reindeer_olympics_part_2.rs)
+    * Day 15: Science for Hungry People
+        * Part 1 - [Description](https://adventofcode.com/2015/day/15#part1) - [Solution](2015/15_science_for_hungry_people_part_1.rs)
+        * Part 2 - [Description](https://adventofcode.com/2015/day/15#part2) - [Solution](2015/15_science_for_hungry_people_part_2.rs)
