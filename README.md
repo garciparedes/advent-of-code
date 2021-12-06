@@ -196,3 +196,6 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 15: Science for Hungry People
         * Part 1 - [Description](https://adventofcode.com/2015/day/15#part1) - [Solution](2015/15_science_for_hungry_people_part_1.rs)
         * Part 2 - [Description](https://adventofcode.com/2015/day/15#part2) - [Solution](2015/15_science_for_hungry_people_part_2.rs)
+    * Day 16: Aunt Sue
+        * Part 1 - [Description](https://adventofcode.com/2015/day/16#part1) - [Solution](2015/16_aunt_sue_part_1.rs)
+        * Part 2 - [Description](https://adventofcode.com/2015/day/16#part2) - [Solution](2015/16_aunt_sue_part_2.rs)
