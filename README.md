@@ -15,6 +15,9 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 4: Giant Squid
         * Part 1 - [Description](https://adventofcode.com/2021/day/4#part1) - [Solution](2021/04_giant_squid_part_1.rs)
         * Part 2 - [Description](https://adventofcode.com/2021/day/4#part2) - [Solution](2021/04_giant_squid_part_2.rs)
+    * Day 5: Hydrothermal Venture 
+        * Part 1 - [Description](https://adventofcode.com/2021/day/5#part1) - [Solution](2021/05_hydrothermal_venture_part_1.rs)
+        * Part 2 - [Description](https://adventofcode.com/2021/day/5#part2) - [Solution](2021/05_hydrothermal_venture_part_2.rs)
 * [2020](https://adventofcode.com/2020)
     * Day 1: Report Repair
         * Part 1 - [Description](https://adventofcode.com/2020/day/1#part1) - [Solution](2020/01_report_repair_part_1.rs)
