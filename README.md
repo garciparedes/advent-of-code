@@ -202,3 +202,6 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 16: Aunt Sue
         * Part 1 - [Description](https://adventofcode.com/2015/day/16#part1) - [Solution](2015/16_aunt_sue_part_1.rs)
         * Part 2 - [Description](https://adventofcode.com/2015/day/16#part2) - [Solution](2015/16_aunt_sue_part_2.rs)
+    * Day 17: No Such Thing as Too Much
+        * Part 1 - [Description](https://adventofcode.com/2015/day/17#part1) - [Solution](2015/17_no_such_thing_as_too_much_part_1.rs)
+        * Part 2 - [Description](https://adventofcode.com/2015/day/17#part2) - [Solution](2015/17_no_such_thing_as_too_much_part_2.rs)
