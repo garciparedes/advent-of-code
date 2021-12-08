@@ -208,3 +208,6 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 17: No Such Thing as Too Much
         * Part 1 - [Description](https://adventofcode.com/2015/day/17#part1) - [Solution](2015/17_no_such_thing_as_too_much_part_1.rs)
         * Part 2 - [Description](https://adventofcode.com/2015/day/17#part2) - [Solution](2015/17_no_such_thing_as_too_much_part_2.rs)
+    * Day 18: Like a GIF For Your Yard 
+        * Part 1 - [Description](https://adventofcode.com/2015/day/18#part1) - [Solution](2015/18_like_a_gif_for_your_yard_part_1.rs)
+        * Part 2 - [Description](https://adventofcode.com/2015/day/18#part2) - [Solution](2015/18_like_a_gif_for_your_yard_part_2.rs)
