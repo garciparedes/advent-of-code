@@ -24,6 +24,9 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 7: The Treachery of Whales
         * Part 1 - [Description](https://adventofcode.com/2021/day/7#part1) - [Solution](2021/07_the_treachery_of_whales_part_1.rs)
         * Part 2 - [Description](https://adventofcode.com/2021/day/7#part2) - [Solution](2021/07_the_treachery_of_whales_part_2.rs)
+    * Day 8: Seven Segment Search
+        * Part 1 - [Description](https://adventofcode.com/2021/day/8#part1) - [Solution](2021/08_seven_segment_search_part_1.rs)
+        * Part 2 - [Description](https://adventofcode.com/2021/day/8#part2) - [Solution](2021/08_seven_segment_search_part_2.rs)
 * [2020](https://adventofcode.com/2020)
     * Day 1: Report Repair
         * Part 1 - [Description](https://adventofcode.com/2020/day/1#part1) - [Solution](2020/01_report_repair_part_1.rs)
