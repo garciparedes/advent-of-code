@@ -30,6 +30,9 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 9: Smoke Basin 
         * Part 1 - [Description](https://adventofcode.com/2021/day/9#part1) - [Solution](2021/09_smoke_basin_part_1.rs)
         * Part 2 - [Description](https://adventofcode.com/2021/day/9#part2) - [Solution](2021/09_smoke_basin_part_2.rs)
+    * Day 10: Syntax Scoring
+        * Part 1 - [Description](https://adventofcode.com/2021/day/10#part1) - [Solution](2021/10_syntax_scoring_part_1.rs)
+        * Part 2 - [Description](https://adventofcode.com/2021/day/10#part2) - [Solution](2021/10_syntax_scoring_part_2.rs)
 * [2020](https://adventofcode.com/2020)
     * Day 1: Report Repair
         * Part 1 - [Description](https://adventofcode.com/2020/day/1#part1) - [Solution](2020/01_report_repair_part_1.rs)
