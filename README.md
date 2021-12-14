@@ -42,6 +42,9 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 13: Transparent Origami 
         * Part 1 - [Description](https://adventofcode.com/2021/day/13#part1) - [Solution](2021/13_transparent_origami_part_1.rs)
         * Part 2 - [Description](https://adventofcode.com/2021/day/13#part2) - [Solution](2021/13_transparent_origami_part_2.rs)
+    * Day 14: Extended Polymerization
+        * Part 1 - [Description](https://adventofcode.com/2021/day/14#part1) - [Solution](2021/14_extended_polymerization_part_1.rs)
+        * Part 2 - [Description](https://adventofcode.com/2021/day/14#part2) - [Solution](2021/14_extended_polymerization_part_2.rs)
 * [2020](https://adventofcode.com/2020)
     * Day 1: Report Repair
         * Part 1 - [Description](https://adventofcode.com/2020/day/1#part1) - [Solution](2020/01_report_repair_part_1.rs)
