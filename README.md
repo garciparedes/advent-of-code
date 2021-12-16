@@ -48,6 +48,9 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 15: Chiton 
         * Part 1 - [Description](https://adventofcode.com/2021/day/15#part1) - [Solution](2021/15_chiton_part_1.rs)
         * Part 2 - [Description](https://adventofcode.com/2021/day/15#part2) - [Solution](2021/15_chiton_part_2.rs)
+    * Day 16: Packet Decoder
+        * Part 1 - [Description](https://adventofcode.com/2021/day/16#part1) - [Solution](2021/16_packet_decoder_part_1.rs)
+        * Part 2 - [Description](https://adventofcode.com/2021/day/16#part2) - [Solution](2021/16_packet_decoder_part_2.rs)
 * [2020](https://adventofcode.com/2020)
     * Day 1: Report Repair
         * Part 1 - [Description](https://adventofcode.com/2020/day/1#part1) - [Solution](2020/01_report_repair_part_1.rs)
