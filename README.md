@@ -51,6 +51,9 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 16: Packet Decoder
         * Part 1 - [Description](https://adventofcode.com/2021/day/16#part1) - [Solution](2021/16_packet_decoder_part_1.rs)
         * Part 2 - [Description](https://adventofcode.com/2021/day/16#part2) - [Solution](2021/16_packet_decoder_part_2.rs)
+    * Day 17: Trick Shot
+        * Part 1 - [Description](https://adventofcode.com/2021/day/17#part1) - [Solution](2021/17_trick_shot_part_1.rs)
+        * Part 2 - [Description](https://adventofcode.com/2021/day/17#part2) - [Solution](2021/17_trick_shot_part_2.rs)
 * [2020](https://adventofcode.com/2020)
     * Day 1: Report Repair
         * Part 1 - [Description](https://adventofcode.com/2020/day/1#part1) - [Solution](2020/01_report_repair_part_1.rs)
