@@ -15,6 +15,9 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 4: Camp Cleanup 
         * Part 1 - [Description](https://adventofcode.com/2022/day/4#part1) - [Solution](2022/04_camp_cleanup_part_1.ts)
         * Part 2 - [Description](https://adventofcode.com/2022/day/4#part2) - [Solution](2022/04_camp_cleanup_part_2.ts)
+    * Day 5: Supply Stacks
+        * Part 1 - [Description](https://adventofcode.com/2022/day/5#part1) - [Solution](2022/05_supply_stacks_part_1.ts)
+        * Part 2 - [Description](https://adventofcode.com/2022/day/5#part2) - [Solution](2022/05_supply_stacks_part_2.ts)
 * [2021](https://adventofcode.com/2021)
     * Day 1: Sonar Sweep
         * Part 1 - [Description](https://adventofcode.com/2021/day/1#part1) - [Solution](2021/01_sonar_sweep_part_1.rs)
