@@ -9,6 +9,9 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 2: Rock Paper Scissors
         * Part 1 - [Description](https://adventofcode.com/2022/day/2#part1) - [Solution](2022/02_rock_paper_scissors_part_1.ts)
         * Part 2 - [Description](https://adventofcode.com/2022/day/2#part2) - [Solution](2022/02_rock_paper_scissors_part_2.ts)
+    * Day 3: Rucksack Reorganization
+        * Part 1 - [Description](https://adventofcode.com/2022/day/3#part1) - [Solution](2022/03_rucksack_reorganization_part_1.ts)
+        * Part 2 - [Description](https://adventofcode.com/2022/day/3#part2) - [Solution](2022/03_rucksack_reorganization_part_2.ts)
 * [2021](https://adventofcode.com/2021)
     * Day 1: Sonar Sweep
         * Part 1 - [Description](https://adventofcode.com/2021/day/1#part1) - [Solution](2021/01_sonar_sweep_part_1.rs)
