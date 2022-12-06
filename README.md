@@ -2,6 +2,10 @@
 This is my set of awesome solutions for the Advent of Code puzzles
 
 ## Contents
+* [2022](https://adventofcode.com/2022)
+    * Day 1: Calorie Counting
+        * Part 1 - [Description](https://adventofcode.com/2022/day/1#part1) - [Solution](2022/01_calorie_counting_part_1.ts)
+        * Part 2 - [Description](https://adventofcode.com/2022/day/1#part2) - [Solution](2022/01_calorie_counting_part_2.ts)
 * [2021](https://adventofcode.com/2021)
     * Day 1: Sonar Sweep
         * Part 1 - [Description](https://adventofcode.com/2021/day/1#part1) - [Solution](2021/01_sonar_sweep_part_1.rs)
