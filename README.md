@@ -21,6 +21,9 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 6: Tuning Trouble
         * Part 1 - [Description](https://adventofcode.com/2022/day/6#part1) - [Solution](2022/06_tuning_trouble_part_1.ts)
         * Part 2 - [Description](https://adventofcode.com/2022/day/6#part2) - [Solution](2022/06_tuning_trouble_part_2.ts)
+    * Day 7: No Space Left On Device
+        * Part 1 - [Description](https://adventofcode.com/2022/day/7#part1) - [Solution](2022/07_no_space_left_on_device_part_1.ts)
+        * Part 2 - [Description](https://adventofcode.com/2022/day/7#part2) - [Solution](2022/07_no_space_left_on_device_part_2.ts)
 * [2021](https://adventofcode.com/2021)
     * Day 1: Sonar Sweep
         * Part 1 - [Description](https://adventofcode.com/2021/day/1#part1) - [Solution](2021/01_sonar_sweep_part_1.rs)
