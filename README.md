@@ -1,4 +1,4 @@
-[#](#) 🎄 Advent of Code 🎄
+# 🎄 Advent of Code 🎄
 This is my set of awesome solutions for the Advent of Code puzzles
 
 ## Contents
