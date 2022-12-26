@@ -36,6 +36,9 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 11: Monkey in the Middle
         * Part 1 - [Description](https://adventofcode.com/2022/day/11#part1) - [Solution](2022/11_monkey_in_the_middle_part_1.ts)
         * Part 2 - [Description](https://adventofcode.com/2022/day/11#part2) - [Solution](2022/11_monkey_in_the_middle_part_2.ts)
+    * Day 12: Hill Climbing Algorithm
+        * Part 1 - [Description](https://adventofcode.com/2022/day/12#part1) - [Solution](2022/12_hill_climbing_algorithm_part_1.ts)
+        * Part 2 - [Description](https://adventofcode.com/2022/day/12#part2) - [Solution](2022/12_hill_climbing_algorithm_part_2.ts)
 * [2021](https://adventofcode.com/2021)
     * Day 1: Sonar Sweep
         * Part 1 - [Description](https://adventofcode.com/2021/day/1#part1) - [Solution](2021/01_sonar_sweep_part_1.rs)
