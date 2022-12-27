@@ -39,7 +39,6 @@ function readInput(): Input {
 function solve(input: Input): Output {
     const source = { x: 500, y: 0 };
     const { min, max } = findMinMaxCoordinates(input, source);
-    console.log(min, max);
     const [n, m] = [max.y - min.y + 1, max.x - min.x + 1]
 
     const board: Board = Array.from(Array(n), _ => Array(m).fill(0));
