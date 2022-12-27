@@ -42,6 +42,9 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 13: Distress Signal
         * Part 1 - [Description](https://adventofcode.com/2022/day/13#part1) - [Solution](2022/13_distress_signal_part_1.ts)
         * Part 2 - [Description](https://adventofcode.com/2022/day/13#part2) - [Solution](2022/13_distress_signal_part_2.ts)
+    * Day 14: Regolith Reservoir
+        * Part 1 - [Description](https://adventofcode.com/2022/day/14#part1) - [Solution](2022/14_regolith_reservoir_part_1.ts)
+        * Part 2 - [Description](https://adventofcode.com/2022/day/14#part2) - [Solution](2022/14_regolith_reservoir_part_2.ts)
 * [2021](https://adventofcode.com/2021)
     * Day 1: Sonar Sweep
         * Part 1 - [Description](https://adventofcode.com/2021/day/1#part1) - [Solution](2021/01_sonar_sweep_part_1.rs)
