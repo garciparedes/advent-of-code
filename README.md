@@ -45,6 +45,9 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 14: Regolith Reservoir
         * Part 1 - [Description](https://adventofcode.com/2022/day/14#part1) - [Solution](2022/14_regolith_reservoir_part_1.ts)
         * Part 2 - [Description](https://adventofcode.com/2022/day/14#part2) - [Solution](2022/14_regolith_reservoir_part_2.ts)
+    * Day 15: Beacon Exclusion Zone
+        * Part 1 - [Description](https://adventofcode.com/2022/day/15#part1) - [Solution](2022/15_beacon_exclusion_zone_part_1.ts)
+        * Part 2 - [Description](https://adventofcode.com/2022/day/15#part2) - [Solution](2022/15_beacon_exclusion_zone_part_2.ts)
 * [2021](https://adventofcode.com/2021)
     * Day 1: Sonar Sweep
         * Part 1 - [Description](https://adventofcode.com/2021/day/1#part1) - [Solution](2021/01_sonar_sweep_part_1.rs)
