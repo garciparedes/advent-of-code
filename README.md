@@ -48,6 +48,9 @@ This is my set of awesome solutions for the Advent of Code puzzles
     * Day 15: Beacon Exclusion Zone
         * Part 1 - [Description](https://adventofcode.com/2022/day/15#part1) - [Solution](2022/15_beacon_exclusion_zone_part_1.ts)
         * Part 2 - [Description](https://adventofcode.com/2022/day/15#part2) - [Solution](2022/15_beacon_exclusion_zone_part_2.ts)
+    * Day 16: Proboscidea Volcanium
+        * Part 1 - [Description](https://adventofcode.com/2022/day/16#part1) - [Solution](2022/16_proboscidea_volcanium_part_1.ts)
+        * Part 2 - [Description](https://adventofcode.com/2022/day/16#part2) - [Solution](2022/16_proboscidea_volcanium_part_2.ts)
 * [2021](https://adventofcode.com/2021)
     * Day 1: Sonar Sweep
         * Part 1 - [Description](https://adventofcode.com/2021/day/1#part1) - [Solution](2021/01_sonar_sweep_part_1.rs)
